@@ -1,10 +1,3 @@
-// MERN = Mongo + Express + React + Node
-
-// Development = Node.js server + React server
-
-// MEN
-
-// E - Express
 
 const express = require('express')
 const app = express()

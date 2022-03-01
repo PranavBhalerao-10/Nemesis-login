@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import './Register.styles.css'
 
+
+// You can add users to check if it gets added in db and gets deleted when we go on dashboard.
 function App() {
 	const history = useHistory()
 
