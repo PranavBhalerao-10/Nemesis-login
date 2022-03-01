@@ -1,0 +1,16 @@
+.login_page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+input {
+  margin: 2px 0;
+}
+.btn-custom {
+  color: linear-gradient(to right, red, yellow);
+  background-color: linear-gradient(to right, red, yellow);
+}
