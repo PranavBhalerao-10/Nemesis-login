@@ -5,6 +5,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-image: linear-gradient(to right, yellow, #ffffe0);
 }
 
 input {

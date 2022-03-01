@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import jwt from 'jsonwebtoken'
 import Axios from 'axios'
 import { useHistory } from 'react-router-dom'
+import './Dashboard.styles.css'
 
 const Dashboard = () => {
 	const history = useHistory()
@@ -26,8 +27,8 @@ const Dashboard = () => {
 
 	return (
 		<div>
-			<h2>User List</h2>
-			<table>
+			<h2 className='center'>User List</h2>
+			<table className="table table-striped">
 				<thead>
 					<tr>
 						<th>Name</th>
@@ -44,7 +45,7 @@ const Dashboard = () => {
 							<td>{val.email}</td>
 							<td>{val.mobile}</td>
 							<td>{val.address}</td>
-							<td><button onClick={() => deleteUser(val._id)}>Delete</button></td>
+							<td><button className='btn btn-danger' onClick={() => deleteUser(val._id)}>Delete</button></td>
 						</tr>
 					</tbody>
 				})}
