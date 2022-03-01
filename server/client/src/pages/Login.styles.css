@@ -1,0 +1,13 @@
+.login_page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, yellow, #ffffe0);
+}
+
+input {
+  margin: 2px 0;
+}

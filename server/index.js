@@ -8,6 +8,7 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const expressValidator = require('express-validator')
 const { check } = require('express-validator')
+const PORT = process.env.PORT || 1337
 
 app.use(cors())
 app.use(express.json())
@@ -81,9 +82,9 @@ app.delete('/api/delete/:id', async (req, res) => {
 })
 
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('../client/build'))
+	app.use(express.static('./client/build'))
 }
 
-app.listen(1337, () => {
-	console.log('Server started on 1337')
+app.listen(PORT, () => {
+	console.log(`Server started on ${PORT}`)
 })
